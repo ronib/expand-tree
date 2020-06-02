@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TreeNode } from 'src/model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'autodesk-tree';
+  children: TreeNode[] = [{name:'first', children:[]}];
 }

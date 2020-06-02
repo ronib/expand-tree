@@ -1,0 +1,5 @@
+<div class="node-container" *ngFor="let child of children">
+        <input type="checkbox" (click)="expand()"/>
+        <span>{{child.name}}</span>
+        <app-tree [children]="child.children" ></app-tree>
+</div>
